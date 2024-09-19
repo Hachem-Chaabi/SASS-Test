@@ -1,43 +1,70 @@
 $breakpoints: (
-  "xs": 0,
+  "xs": 360px,
   "sm": 480px,
   "md": 720px,
   "lg": 960px,
-  "xl": 1200px,
+  "xl": 1024px,
 );
 
-@mixin xs {
-  @media (min-width: map-get($breakpoints, "xs")) {
-    @content;
+@media (max-width: 1285px) {
+  .right-box-container {
+    max-width: 95%;
+  }
+  .mb-5 {
+    margin-bottom: 60px;
+  }
+  .form-container {
+    border-bottom-left-radius: 70px;
+    border-top-left-radius: 70px;
+  }
+  .logo-width {
+    max-width: 300px;
+  }
+  .logo-desc {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    max-width: 73%;
+  }
+  .mb-4 {
+    margin-bottom: 60px;
   }
 }
 
-@mixin sm {
-  @media (min-width: map-get($breakpoints, "sm")) {
-    @content;
+@media (max-width: 1024px) {
+  .full-height {
+    flex-direction: column;
   }
-}
-
-@mixin md {
-  @media (min-width: map-get($breakpoints, "md")) {
-    @content;
+  .form-container {
+    background-color: #fff;
+    width: 100%;
+    height: 72%;
+    border-top-right-radius: 70px;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 0;
+    gap: 20px;
   }
-}
-
-@mixin lg {
-  @media (min-width: map-get($breakpoints, "lg")) {
-    @content;
+  .mb-4 {
+    margin-bottom: 20px;
   }
-}
-
-@mixin xl {
-  @media (min-width: map-get($breakpoints, "xl")) {
-    @content;
+  .logo-width {
+    max-width: 250px;
   }
-}
-
-@mixin breakpoint($bp: 0) {
-  @media (min-width: $bp) {
-    @content;
+  .mb-5 {
+    margin-bottom: 0;
+  }
+  .font-xl {
+    font-size: 32px;
+  }
+  .logo-box-container {
+    padding-top: 37px;
+  }
+  .right-box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  .mb-3 {
+    margin-bottom: 0;
   }
 }

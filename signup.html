@@ -8,74 +8,83 @@
   <title>SignUp-ixamee</title>
 </head>
 
-<body class="light-primary-bg section">
+<body class="light-primary-bg full-height">
   <div>
     <img src="assets/light green circle.png" alt="" class="light-green-circle">
     <img src="assets/dark green circle.png" alt="" class="dark-green-circle">
   </div>
-  <section class="section display-f align-center justify-space-between gap-7">
+  <section class="full-height display-f align-center justify-space-between">
 
-      <div class="display-f display-column logo-box-container">
-        <img src="assets/ixamee-logo.png" alt="" class="mb-3 logo-width">
-        <h3>Une seule plateforme pour tous vos examens</h3>
+      <div class="display-column logo-box-container align-center">
+        <img src="assets/ixamee-logo.png" alt="" class="mb-4 logo-width">
+        <h3 class="logo-desc teriary-color">Une seule plateforme pour tous vos <span class="primary-color">examens</span></h3>
       </div>
   
-    <div class="display-f display-column align-center justify-center form-container">
+    <div class="display-column align-center justify-center form-container">
       <h2 class="font-w-xxl font-xl mb-5 primary-color">Créez un compte</h2>
-      <div class="display-f gap-8 selector-container align-center justify-center mb-5">
-        <p class="font-lg selected-container">Professeur</p>
-        <p class="font-lg selected-container-style">Etudiant</p>
-      </div>
-      <div class="">
-        <div class="input-container">
-          <p>Nom<span>*</span></p>
-          <div class="input-style">
-            <img src="assets/pen-icon.png" alt="">
-            <input type="text" placeholder="Entrez votre nom">
-          </div>
+      <div class="right-box-container">
+        <div class="display-f selector-container align-center justify-space-between mb-5">
+          <p class="font-lg selected-container">Professeur</p>
+          <p class="font-lg selected-container-style">Etudiant</p>
         </div>
-        <div>
-          <p>Prénom<span>*</span></p>
-          <div>
-            <img src="assets/pen-icon.png" alt="">
-            <input type="text" placeholder="Entrez votre prénom">
+        <div class="inputs-container mb-3">
+          <div class="input-container">
+            <p class="description-color">Nom<span class="red-color">*</span></p>
+            <div class="display-f align-center input-style gap-1">
+              <img src="assets/pen-icon.png" alt="">
+              <input type="text" placeholder="Entrez votre nom">
+            </div>
           </div>
-        </div>
-        <div>
-          <p>E-mail<span>*</span></p>
-          <div>
-            <img src="assets/mail-icon.png" alt="">
-            <input type="text" placeholder="Entrez votre e-mail">
+          <div class="input-container">
+            <p class="description-color">Prénom<span class="red-color">*</span></p>
+            <div class="display-f align-center input-style gap-1">
+              <img src="assets/pen-icon.png" alt="">
+              <input type="text" placeholder="Entrez votre prénom">
+            </div>
           </div>
-        </div>
-        <div>
-          <p>Numéro de téléphone<span>*</span></p>
-          <div>
-            <img src="assets/tunisia-flag.png" alt="">
-            <input type="text" placeholder="+216 00 000 000">
-            <img src="assets/down-arrow.png" alt="">
+          <div class="input-container">
+            <p class="description-color">E-mail<span class="red-color">*</span></p>
+            <div class="display-f align-center input-style gap-1">
+              <img src="assets/mail-icon.png" alt="">
+              <input type="text" placeholder="Entrez votre e-mail">
+            </div>
           </div>
-        </div>
-        <div>
-          <p>Gouvernorat<span>*</span></p>
-          <div>
-            <img src="assets/city-icon.png" alt="">
-            <input type="text" placeholder="Choisissez votre gouvernorat">
-            <img src="assets/down-arrow.png" alt="">
+          <div class="input-container">
+            <p class="description-color">Numéro de téléphone<span class="red-color">*</span></p>
+            <div class="display-f align-center input-style justify-space-between">
+              <div class="display-f align-center gap-1">
+                <img src="assets/tunisia-flag.png" alt="">
+                <input type="text" placeholder="+216 00 000 000">
+              </div>
+              <img src="assets/down-arrow.png" alt="" class="cursor">
+            </div>
           </div>
-        </div>
-        <div>
-          <p>Mot de passe<span>*</span></p>
-          <div>
-            <img src="assets/pen-icon.png" alt="">
-            <input type="text" placeholder="Choisissez un mot de passe">
-            <img src="assets/hide-icon.png" alt="">
+          <div class="input-container">
+            <p class="description-color">Gouvernorat<span class="red-color">*</span></p>
+            <div class="display-f align-center input-style justify-space-between">
+              <div class="display-f align-center gap-1">
+                <img src="assets/city-icon.png" alt="">
+                <input class="normal-cursor" type="text" placeholder="Choisissez votre gouvernorat" readonly>
+              </div>
+              <img src="assets/down-arrow.png" alt="" class="cursor">
+            </div>
           </div>
+          <div class="input-container">
+            <p class="description-color">Mot de passe<span class="red-color">*</span></p>
+            <div class="display-f align-center input-style justify-space-between">
+              <div class="display-f align-center gap-1">
+                <img src="assets/key-icon.png" alt="">
+                <input type="text" placeholder="Choisissez un mot de passe">
+              </div>
+              <img src="assets/hide-icon.png" alt="" class="cursor">
+            </div>
+          </div>
+          
         </div>
-      </div>
-      <div>
-        <button>S'inscrire</button>
-        <p>Vous avez déjà un compte? <span>Se connecter</span></p>
+        <div class="btn-container display-column gap-1">
+          <button class="secondary-bg border-none">S'inscrire</button>
+          <p class="description-color">Vous avez déjà un compte? <span class="primary-color">Se connecter</span></p>
+        </div>
       </div>
     </div>
   </section>
