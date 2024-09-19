@@ -1,0 +1,30 @@
+header {
+  padding: 10px 60px 10px 60px;
+}
+
+.bell-style {
+  background-color: #fff;
+  border-radius: 100%;
+  padding: 8px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bell-notif {
+  background-color: $light-red;
+  color: $red;
+  position: absolute;
+  top: 12px;
+  right: 283px;
+  border-radius: 50%;
+  font-weight: 700;
+  width: 16px;
+  height: 16px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
