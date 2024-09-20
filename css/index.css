@@ -3,6 +3,10 @@
   color: #1B8392;
 }
 
+.primary-bg {
+  background-color: #1B8392;
+}
+
 .secondary-color {
   color: #99C6D3;
 }
@@ -27,6 +31,14 @@
   background-color: #F0F6F8;
 }
 
+.side-bar-white-color {
+  color: #F3F6F6;
+}
+
+.side-bar-white-bg {
+  background-color: #F3F6F6;
+}
+
 /* reset styles */
 * {
   margin: 0;
@@ -39,6 +51,12 @@ html {
 body {
   font-family: Poppins;
   box-sizing: border-box;
+  height: 100%;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
 }
 
 img {
@@ -172,8 +190,12 @@ img {
   gap: 10px;
 }
 
-.gap-2 {
-  gap: 20px;
+.gap-3 {
+  gap: 30px;
+}
+
+.gap-7 {
+  gap: 70px;
 }
 
 .justify-center {
@@ -193,7 +215,7 @@ img {
 }
 
 header {
-  padding: 10px 60px 10px 60px;
+  padding: 10px 60px 10px 25px;
 }
 
 .bell-style {
@@ -212,7 +234,7 @@ header {
   color: #F04438;
   position: absolute;
   top: 12px;
-  right: 283px;
+  right: 312px;
   border-radius: 50%;
   font-weight: 700;
   width: 16px;
@@ -221,6 +243,72 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  max-width: 260px;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+}
+nav hr {
+  border: solid 1.5px #99C6D3;
+  width: 244px;
+  margin-bottom: 50px;
+}
+nav ul {
+  list-style-type: none;
+  padding-bottom: 90px;
+}
+nav ul li {
+  font-size: 20px;
+  line-height: 24px;
+  gap: 15px;
+  color: #99C6D3;
+  font-weight: 400;
+  padding: 0 15px;
+}
+nav ul li input {
+  appearance: none;
+  border: 1px solid #F0F6F8;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: grid;
+  place-content: center;
+}
+nav ul li input::before {
+  content: "";
+  width: 9px;
+  height: 10px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 10px 10px #FBB800;
+}
+nav ul li input:checked::before {
+  transform: scale(1);
+}
+nav ul li .lycee {
+  font-size: 18px;
+}
+nav ul .btn-style {
+  padding: 8px 15px 8px 15px;
+  border-radius: 10px;
+}
+
+.pt-3 {
+  padding-top: 48px;
+}
+
+.ml-2 {
+  margin-left: 33px;
+}
+
+.ml-3 {
+  margin-left: 36px;
 }
 
 .mb-3 {

@@ -1,5 +1,5 @@
 header {
-  padding: 10px 60px 10px 60px;
+  padding: 10px 60px 10px 25px;
 }
 
 .bell-style {
@@ -18,7 +18,7 @@ header {
   color: $red;
   position: absolute;
   top: 12px;
-  right: 283px;
+  right: 312px;
   border-radius: 50%;
   font-weight: 700;
   width: 16px;
@@ -27,4 +27,58 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  max-width: 260px;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  hr {
+    border: solid 1.5px #99C6D3;
+    width: 244px;
+    margin-bottom: 50px;
+  }
+  ul {
+    list-style-type: none;
+    padding-bottom: 90px;
+    li {
+      font-size: 20px;
+      line-height: 24px;
+      gap: 15px;
+      color: #99C6D3;
+      font-weight: 400;
+      padding: 0 15px;
+      input {
+        appearance: none;
+        border: 1px solid $light-primary-color;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        display: grid;
+        place-content: center;
+        &::before {
+          content: "";
+          width: 9px;
+          height: 10px;
+          border-radius: 50%;
+          transform: scale(0);
+          transition: 120ms transform ease-in-out;
+          box-shadow: inset 10px 10px $side-bar-yellow-color;
+        }
+        &:checked::before{
+          transform: scale(1);
+        }
+      }
+      .lycee {
+        font-size: 18px;
+      }
+    }
+    .btn-style {
+      padding: 8px 15px 8px 15px;
+      border-radius: 10px;
+    }
+  }
 }
