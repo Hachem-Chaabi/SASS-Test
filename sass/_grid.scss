@@ -12,21 +12,13 @@ $grid-gaps: (
   "7": 70px,
   "8": 80px,
 );
-$layout-values: flex-start, flex-end, center, space-between, space-around;
+$layout-values: flex-start, flex-end, center, space-between, space-around, space-evenly;
 $align-values: flex-start, flex-end, center;
 
 // Base layout
-.container {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-.row {
-  display: flex;
-  flex-wrap: row wrap;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 // Grid gaps calsses

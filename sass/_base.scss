@@ -110,6 +110,18 @@ img {
   }
 }
 
+@mixin normal-cursor {
+  cursor: context-menu;
+}
+
+@mixin input {
+  cursor: context-menu;
+  border: none;
+  outline: none;
+  color: $description-color;
+  font-family: Poppins;
+}
+
 .inputs-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -120,17 +132,12 @@ img {
     font-weight: 500;
   }
   input {
-    border: none;
-    outline: none;
+    @include input;
     font-size: 16px;
     font-style: italic;
-    color: $description-color;
-    font-family: Poppins;
     font-weight: 400;
   }
-  .normal-cursor {
-    cursor: context-menu;
-  }
+  @include normal-cursor;
   .input-style {
     border-radius: 10px;
     border: 1.5px solid #D9D9D9;

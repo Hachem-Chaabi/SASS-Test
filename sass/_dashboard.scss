@@ -1,5 +1,13 @@
 header {
-  padding: 10px 60px 10px 25px;
+  padding: 15px 60px 15px 25px;
+}
+
+main {
+  height: 100%;
+}
+
+.dashboard-body {
+  overflow: hidden;
 }
 
 .bell-style {
@@ -17,8 +25,8 @@ header {
   background-color: $light-red;
   color: $red;
   position: absolute;
-  top: 12px;
-  right: 312px;
+  top: 13px;
+  right: 311px;
   border-radius: 50%;
   font-weight: 700;
   width: 16px;
@@ -35,15 +43,14 @@ nav {
   max-width: 260px;
   height: 100%;
   overflow: hidden;
-  position: fixed;
   hr {
     border: solid 1.5px #99C6D3;
     width: 244px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
   ul {
     list-style-type: none;
-    padding-bottom: 90px;
+    padding-bottom: 290px;
     li {
       font-size: 20px;
       line-height: 24px;
@@ -51,6 +58,7 @@ nav {
       color: #99C6D3;
       font-weight: 400;
       padding: 0 15px;
+      cursor: pointer;
       input {
         appearance: none;
         border: 1px solid $light-primary-color;
@@ -80,5 +88,112 @@ nav {
       padding: 8px 15px 8px 15px;
       border-radius: 10px;
     }
+  }
+}
+
+.title-part {
+  p{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: $description-color;
+  }
+}
+
+@mixin icons-container {
+  border-radius: 20px;
+  padding: 10.5px 10px 10.5px 10px;
+  img {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 16.5px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+  }
+  .icon-title-container {
+    gap: 8px;
+  }
+}
+
+.classes-container {
+  @include icons-container;
+  background-color: $light-red;
+}
+
+.etudiant-container {
+  @include icons-container;
+  background-color: $light-primary-color;
+}
+
+.examens-container {
+  @include icons-container;
+  background-color: $lighter-green-color;
+}
+
+.archive-container {
+  @include icons-container;
+  background-color: $light-yellow;
+}
+
+.dashboard-input-style {
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+  padding: 5.5px 10px 5.5px 10px;
+  .normal-cursor {
+    @include input;
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 100px;
+  }
+  img {
+    cursor: pointer;
+    padding-right: 10px;
+  }
+}
+
+@mixin stat-container-border-style {
+  border-radius: 20px;
+  border: 1px solid #D0D5DD;
+}
+
+.stat-container {
+  @include stat-container-border-style;
+  padding: 25px 60px 20px 84px;
+  hr {
+    border: none;
+    border-radius: 127px;
+    width: 5.1px;
+    height: 56px;
+  }
+}
+
+.voir-plus-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cards-container {
+  @include stat-container-border-style;
+  padding: 15px 21px 15px 21px;
+}
+
+.card-container {
+  border-radius: 20px;
+  padding: 15px 20px 15px 20px;
+  background-color: $light-primary-color;
+  button {
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 55px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
