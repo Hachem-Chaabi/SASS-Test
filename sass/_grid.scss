@@ -21,6 +21,15 @@ $align-values: flex-start, flex-end, center;
   grid-template-columns: repeat(4, 1fr);
 }
 
+.dashboard-left-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.width-100 {
+  width: 100%;
+}
+
 // Grid gaps calsses
 @each $key, $val in $grid-gaps {
   .gap-#{$key} {

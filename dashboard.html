@@ -72,52 +72,176 @@
       </ul>
     </nav>
 
-    <section>
-      <h3 class="font-w-xxl font-xxl pb-3 pt-2 primary-color">Tableau de bord</h3>
-      <div class="display-column align-flex-start gap-2 mb-4">
-        <div class="display-f align-center gap-1 title-part">
-          <img src="assets/eye-icon.png" alt="">
-          <p>Aperçu</p>
+    <section class="display-f gap-4">
+      
+      <div class="dashboard-left-container">
+        <h3 class="font-w-xxl font-xxl pb-3 pt-2 primary-color">Tableau de bord</h3>
+        <div class="display-column align-flex-start gap-2 mb-4">
+          <div class="display-f align-center gap-1 title-part">
+            <img src="assets/eye-icon.png" alt="">
+            <p>Aperçu</p>
+          </div>
+          <div class="grid gap-2">
+            <div class="display-f align-center gap-1 classes-container">
+              <img src="assets/red-classes-icon.png" alt="">
+              <div class="display-column align-flex-start icon-title-container">
+                <p class="red-color">Mes classes</p>
+                <p class="red-color">3</p>
+              </div>
+            </div>
+            <div class="display-f align-center gap-1 etudiant-container">
+              <img src="assets/etudiant-icon.png" alt="">
+              <div class="display-column align-flex-start icon-title-container">
+                <p class="primary-color">Mes étudiants</p>
+                <p class="primary-color">5</p>
+              </div>
+            </div>
+            <div class="display-f align-center gap-1 examens-container">
+              <img src="assets/light-green-exmanes-icon.png" alt="">
+              <div class="display-column align-flex-start icon-title-container">
+                <p class="light-green-color">Mes examens</p>
+                <p class="light-green-color">6</p>
+              </div>
+            </div>
+            <div class="display-f align-center gap-1 archive-container">
+              <img src="assets/yellow-archive-icon.png" alt="">
+              <div class="display-column align-flex-start icon-title-container">
+                <p class="yellow-color">Mon archive</p>
+                <p class="yellow-color">2</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="grid gap-2">
-          <div class="display-f align-center gap-1 classes-container">
-            <img src="assets/red-classes-icon.png" alt="">
-            <div class="display-column align-flex-start icon-title-container">
-              <p class="red-color">Mes classes</p>
-              <p class="red-color">3</p>
+  
+        <div class="display-column gap-2 mb-4">
+          <div class="display-f align-center justify-space-between">
+            <div class="display-f align-center gap-1 title-part">
+              <img src="assets/stats-icon.png" alt="">
+              <p>Statistiques Examens</p>
+            </div>
+            <div class="display-f gap-2">
+              <div class="display-f align-center dashboard-input-style">
+                <input class="normal-cursor" type="text" placeholder="Bac SC_2" readonly>
+                <img src="assets/down-arrow.png" alt="" class="cursor">
+              </div>
+              <div class="display-f align-center dashboard-input-style">
+                <input class="normal-cursor" type="text" placeholder="Devoir de synt" readonly>
+                <img src="assets/down-arrow.png" alt="" class="cursor">
+              </div>
             </div>
           </div>
-          <div class="display-f align-center gap-1 etudiant-container">
-            <img src="assets/etudiant-icon.png" alt="">
-            <div class="display-column align-flex-start icon-title-container">
-              <p class="primary-color">Mes étudiants</p>
-              <p class="primary-color">5</p>
-            </div>
-          </div>
-          <div class="display-f align-center gap-1 examens-container">
-            <img src="assets/light-green-exmanes-icon.png" alt="">
-            <div class="display-column align-flex-start icon-title-container">
-              <p class="light-green-color">Mes examens</p>
-              <p class="light-green-color">6</p>
-            </div>
-          </div>
-          <div class="display-f align-center gap-1 archive-container">
-            <img src="assets/yellow-archive-icon.png" alt="">
-            <div class="display-column align-flex-start icon-title-container">
-              <p class="yellow-color">Mon archive</p>
-              <p class="yellow-color">2</p>
+  
+          <div class="stat-container display-f align-center gap-5">
+            <img src="assets/stat-circle.png" alt="">
+            <div class="stat-text-container display-f align-center gap-4">
+              <div class="stat-text display-f align-center gap-1">
+                <hr class="red-bg">
+                <div class="display-column gap-1 align-flex-start">
+                  <p class="font-w-xl font-md description-color">Entre 0 - 30%</p>
+                  <p class="font-w-sm font-md teriary-color">3 étudiants</p>
+                </div>
+              </div>
+              <div class="stat-text display-f align-center gap-1">
+                <hr class="yellow-bg">
+                <div class="display-column gap-1 align-flex-start">
+                  <p class="font-w-xl font-md description-color">Entre 30 - 60%</p>
+                  <p class="font-w-sm font-md teriary-color">7 étudiants</p>
+                </div>
+              </div>
+              <div class="stat-text display-f align-center gap-1">
+                <hr class="light-green-bg">
+                <div class="display-column gap-1 align-flex-start">
+                  <p class="font-w-xl font-md description-color">Entre 60 - 80%</p>
+                  <p class="font-w-sm font-md teriary-color">8 étudiants</p>
+                </div>
+              </div>
+              <div class="stat-text display-f align-center gap-1">
+                <hr class="primary-bg">
+                <div class="display-column gap-1 align-flex-start">
+                  <p class="font-w-xl font-md description-color">Plus de 80%</p>
+                  <p class="font-w-sm font-md teriary-color">10 étudiants</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+  
+        <div class="display-column gap-2">
+          <div class="display-f align-center justify-space-between">
+            <div class="display-f align-center gap-1 title-part">
+              <img src="assets/green-classes-icon.png" alt="">
+              <p>Classes</p>
+            </div>
+            <p class="voir-plus-link primary-color">Voir plus (7)</p>
+          </div>
+  
+          <div class="cards-container display-f align-center justify-space-between gap-5">
+  
+            <div class="card-container display-column align-center gap-5">
+              <div class="title-card-container display-f align-center gap-4">
+                <div class="display-f align-center gap-1">
+                  <img src="assets/PI-icon.png" alt="">
+                  <p class="primary-color">Bac maths_3</p>
+                </div>
+                <img src="assets/3-point-icon.png" alt="">
+              </div>
+              <div class="display-column gap-2 align-center">
+                <img src="assets/people-icon.png" alt="">
+                <p class="font-w-lg font-sm teriary-color">Créé le 27/04/2023</p>
+              </div>
+              <button class="primary-bg">
+                Ouvrir
+              </button>
+            </div>
+            <div class="card-container display-column align-center gap-5">
+              <div class="title-card-container display-f align-center gap-4">
+                <div class="display-f align-center gap-1">
+                  <img src="assets/PI-icon.png" alt="">
+                  <p class="primary-color">Bac maths_3</p>
+                </div>
+                <img src="assets/3-point-icon.png" alt="">
+              </div>
+              <div class="display-column gap-2 align-center">
+                <img src="assets/people-icon.png" alt="">
+                <p class="font-w-lg font-sm teriary-color">Créé le 27/04/2023</p>
+              </div>
+              <button class="primary-bg">
+                Ouvrir
+              </button>
+            </div>
+            <div class="card-container display-column align-center gap-5">
+              <div class="title-card-container display-f align-center gap-4">
+                <div class="display-f align-center gap-1">
+                  <img src="assets/PI-icon.png" alt="">
+                  <p class="primary-color">Bac maths_3</p>
+                </div>
+                <img src="assets/3-point-icon.png" alt="">
+              </div>
+              <div class="display-column gap-2 align-center">
+                <img src="assets/people-icon.png" alt="">
+                <p class="font-w-lg font-sm teriary-color">Créé le 27/04/2023</p>
+              </div>
+              <button class="primary-bg">
+                Ouvrir
+              </button>
+            </div>
+  
+          </div>
+        </div>
+
       </div>
 
-      <div class="display-column gap-2 mb-4">
-        <div class="display-f align-center justify-space-between">
-          <div class="display-f align-center gap-1 title-part">
-            <img src="assets/stats-icon.png" alt="">
-            <p>Statistiques Examens</p>
+      <div class="dashboard-right-container">
+
+        <div class="display-column align-center gap-1 mb-3 width-100">
+          <div class="display-f align-center justify-space-between width-100">
+            <div class="display-f align-center gap-1 title-part">
+              <img src="assets/correction-icon.png" alt="">
+              <p>Corrections récentes</p>
+            </div>
+            <p class="voir-plus-link primary-color">Voir plus (0)</p>
           </div>
-          <div class="display-f gap-2">
+          <div class="display-f gap-2 justify-flex-end width-100">
             <div class="display-f align-center dashboard-input-style">
               <input class="normal-cursor" type="text" placeholder="Bac SC_2" readonly>
               <img src="assets/down-arrow.png" alt="" class="cursor">
@@ -127,107 +251,117 @@
               <img src="assets/down-arrow.png" alt="" class="cursor">
             </div>
           </div>
-        </div>
-
-        <div class="stat-container display-f align-center gap-6">
-          <img src="assets/stat-circle.png" alt="">
-          <div class="stat-text-container display-f align-center gap-5">
-            <div class="stat-text display-f align-center gap-1">
-              <hr class="red-bg">
-              <div class="display-column gap-1 align-flex-start">
-                <p class="font-w-xl font-md description-color">Entre 0 - 30%</p>
-                <p class="font-w-sm font-md teriary-color">3 étudiants</p>
+          <div class="correction-box-container">
+            <div class="display-f align-center justify-flex-start pb-2">
+              <div class="person-name-container display-f align-center gap-2">
+                <img src="assets/Maher-img.png" alt="">
+                <p>Maher Laarif</p>
+              </div>
+              <div class="display-f gap-5 align-center">
+                <p class="stage-name yellow-color light-yellow-bg display-f align-center"><img src="assets/yellow-dot.png" alt=""> En cours</p>
+                <p class="percentage yellow-color"><span>25%</span> Corrigé</p>
               </div>
             </div>
-            <div class="stat-text display-f align-center gap-1">
-              <hr class="yellow-bg">
-              <div class="display-column gap-1 align-flex-start">
-                <p class="font-w-xl font-md description-color">Entre 30 - 60%</p>
-                <p class="font-w-sm font-md teriary-color">7 étudiants</p>
+            <div class="display-f align-center justify-flex-start underline pt-4 pb-2">
+              <div class="person-name-container display-f align-center gap-2">
+                <img src="assets/mohamed-img.png" alt="">
+                <p>Mohamed Amine Kacem</p>
+              </div>
+              <div class="display-f gap-5 align-center">
+                <p class="stage-name yellow-color light-yellow-bg display-f align-center"><img src="assets/yellow-dot.png" alt=""> En cours</p>
+                <p class="percentage yellow-color"><span>75%</span> Corrigé</p>
               </div>
             </div>
-            <div class="stat-text display-f align-center gap-1">
-              <hr class="light-green-bg">
-              <div class="display-column gap-1 align-flex-start">
-                <p class="font-w-xl font-md description-color">Entre 60 - 80%</p>
-                <p class="font-w-sm font-md teriary-color">8 étudiants</p>
+            <div class="display-f align-center justify-flex-start underline pt-4 pb-2">
+              <div class="person-name-container display-f align-center gap-2">
+                <img src="assets/lina-img.png" alt="">
+                <p>Lina Laadhari</p>
+              </div>
+              <div class="display-f gap-5 align-center">
+                <p class="stage-name light-green-color lighter-green-bg display-f align-center"><img src="assets/green-dot.png" alt=""> Corrigé</p>
+                <p class="percentage light-green-color"><span>100%</span> Corrigé</p>
               </div>
             </div>
-            <div class="stat-text display-f align-center gap-1">
-              <hr class="primary-bg">
-              <div class="display-column gap-1 align-flex-start">
-                <p class="font-w-xl font-md description-color">Plus de 80%</p>
-                <p class="font-w-sm font-md teriary-color">10 étudiants</p>
+            <div class="display-f align-center justify-flex-start underline pt-4">
+              <div class="person-name-container display-f align-center gap-2">
+                <img src="assets/jawher-img.png" alt="">
+                <p>Jawher Souguir</p>
+              </div>
+              <div class="display-f gap-5 align-center">
+                <p class="stage-name red-color light-red-bg display-f align-center"><img src="assets/red-dot.png" alt=""> Non corrigé</p>
+                <p class="percentage red-color"><span>0%</span> Corrigé</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="display-column gap-2">
-        <div class="display-f align-center justify-space-between">
-          <div class="display-f align-center gap-1 title-part">
-            <img src="assets/green-classes-icon.png" alt="">
-            <p>Classes</p>
+        <div class="display-column align-center gap-1 width-100">
+          <div class="display-f align-center justify-space-between width-100">
+            <div class="display-f align-center gap-1 title-part">
+              <img src="assets/bulletin-icon.png" alt="">
+              <p>Bulletins des étudiants</p>
+            </div>
+            <p class="voir-plus-link primary-color">Voir plus (0)</p>
           </div>
-          <p class="voir-plus-link primary-color">Voir plus (7)</p>
+          <div class="display-f gap-2 justify-flex-end width-100">
+            <div class="display-f align-center dashboard-input-style">
+              <input class="normal-cursor" type="text" placeholder="Bac SC_2" readonly>
+              <img src="assets/down-arrow.png" alt="" class="cursor">
+            </div>
+            <div class="display-f align-center dashboard-input-style">
+              <input class="normal-cursor" type="text" placeholder="Devoir de synt" readonly>
+              <img src="assets/down-arrow.png" alt="" class="cursor">
+            </div>
+          </div>
+          <div class="bulletins-box-container">
+            <div>
+              <table>
+                <tr class="table-header-style">
+                  <td class="display-f align-center primary-color"><img src="assets/profile-icon.png" alt="">Nom d'étudiant</td>
+                  <td class="primary-color">Classe</td>
+                  <td class="primary-color">Note</td>
+                  <td class="display-f align-center primary-color"><img src="assets/rang-icon.png" alt="">Rang</td>
+                </tr>
+                <tr>
+                  <td class="display-f align-center gap-1"><img src="assets/ahmed-img.png" alt="">Ahmed Benamor</td>
+                  <td class="teriary-color text-style">Bac Maths_2</td>
+                  <td class="light-green-color text-style">17/20</td>
+                  <td class="primary-color text-style">1</td>
+                </tr>
+                <tr class="underline">
+                  <td class="display-f align-center gap-1"><img src="assets/mohammed-bl-img.png" alt="">Mohamed Amine Kacem</td>
+                  <td class="teriary-color text-style">Bac Maths_2</td>
+                  <td class="light-green-color text-style">13.5/20</td>
+                  <td class="primary-color text-style">2</td>
+                </tr>
+                <tr class="underline">
+                  <td class="display-f align-center gap-1"><img src="assets/mohammed-bl-img.png" alt="">Mohamed Amine Kacem</td>
+                  <td class="teriary-color text-style">Bac Maths_2</td>
+                  <td class="light-green-color text-style">13.5/20</td>
+                  <td class="primary-color text-style">3</td>
+                </tr>
+                <tr class="underline">
+                  <td class="display-f align-center gap-1"><img src="assets/lina-bl-img.png" alt="">Lina Ladhari</td>
+                  <td class="teriary-color text-style">Bac Maths_2</td>
+                  <td class="light-green-color text-style">12.75/20</td>
+                  <td class="primary-color text-style">4</td>
+                </tr>
+                <tr class="underline">
+                  <td class="display-f align-center gap-1"><img src="assets/ahmed-img.png" alt="">Ahmed Benamor</td>
+                  <td class="teriary-color text-style">Bac Maths_2</td>
+                  <td class="light-green-color text-style">17/20</td>
+                  <td class="primary-color text-style">5</td>
+                </tr>
+              </table>
+            </div>
+            
+          </div>
         </div>
 
-        <div class="cards-container display-f align-center justify-space-evenly gap-5">
-
-          <div class="card-container display-column align-center gap-5">
-            <div class="title-card-container display-f align-center gap-4">
-              <div class="display-f align-center gap-1">
-                <img src="assets/PI-icon.png" alt="">
-                <p>Bac maths_3</p>
-              </div>
-              <img src="assets/3-point-icon.png" alt="">
-            </div>
-            <div class="display-column gap-2 align-center">
-              <img src="assets/people-icon.png" alt="">
-              <p>Créé le 27/04/2023</p>
-            </div>
-            <button class="primary-bg">
-              Ouvrir
-            </button>
-          </div>
-          <div class="card-container display-column align-center gap-5">
-            <div class="title-card-container display-f align-center gap-4">
-              <div class="display-f align-center gap-1">
-                <img src="assets/PI-icon.png" alt="">
-                <p>Bac maths_3</p>
-              </div>
-              <img src="assets/3-point-icon.png" alt="">
-            </div>
-            <div class="display-column gap-2 align-center">
-              <img src="assets/people-icon.png" alt="">
-              <p>Créé le 27/04/2023</p>
-            </div>
-            <button class="primary-bg">
-              Ouvrir
-            </button>
-          </div>
-          <div class="card-container display-column align-center gap-5">
-            <div class="title-card-container display-f align-center gap-4">
-              <div class="display-f align-center gap-1">
-                <img src="assets/PI-icon.png" alt="">
-                <p>Bac maths_3</p>
-              </div>
-              <img src="assets/3-point-icon.png" alt="">
-            </div>
-            <div class="display-column gap-2 align-center">
-              <img src="assets/people-icon.png" alt="">
-              <p>Créé le 27/04/2023</p>
-            </div>
-            <button class="primary-bg">
-              Ouvrir
-            </button>
-          </div>
-
-        </div>
       </div>
 
     </section>
+    
 
   </main>
 

@@ -38,10 +38,10 @@ $utilities: (
     "prefix": "pt",
     "values": (
       "0": 0,
-      "1": $base-padding,
+      "1": $base-padding - 3,
       "2": $base-padding * 1.25,
       "3": $base-padding * 4,
-      "4": $base-padding * 6,
+      "4": $base-padding * 1.5,
       "5": $base-padding * 8
     ),
   ),
@@ -49,8 +49,8 @@ $utilities: (
     "prefix": "pb",
     "values": (
       "0": 0,
-      "1": $base-padding,
-      "2": $base-padding * 1.25,
+      "1": $base-padding - 3,
+      "2": $base-padding * 1.5,
       "3": $base-padding * 4,
       "4": $base-padding * 6,
       "5": $base-padding * 8
