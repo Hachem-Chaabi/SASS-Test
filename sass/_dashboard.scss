@@ -99,6 +99,10 @@ nav {
   }
 }
 
+.responsive-nav {
+  display: none;
+}
+
 .title-part {
   p{
     font-weight: 600;
@@ -166,6 +170,14 @@ nav {
 @mixin stat-container-border-style {
   border-radius: 20px;
   border: 1px solid #D0D5DD;
+}
+
+.stat-text-container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  p {
+    text-wrap: nowrap;
+  }
 }
 
 .stat-container {
@@ -265,6 +277,7 @@ nav {
     padding: 3.5px 25px;
     text-wrap: nowrap;
     gap: 5px;
+    text-align: center;
   }
   .percentage {
     font-weight: 400;
@@ -306,6 +319,7 @@ table {
       gap: 5px;
       padding: 10px 10px 10px 0;
       width: 100%;
+      justify-content: center;
       img {
         width: 18px;
         height: 18px;

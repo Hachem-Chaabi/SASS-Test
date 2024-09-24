@@ -19,6 +19,7 @@ $align-values: flex-start, flex-end, center;
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  width: 100%;
 }
 
 .dashboard-left-container {
