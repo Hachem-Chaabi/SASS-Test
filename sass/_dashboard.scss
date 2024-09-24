@@ -1,0 +1,357 @@
+header {
+  padding: 15px 60px 15px 25px;
+}
+
+main {
+  height: 100%;
+}
+
+section {
+  width: 100%;
+  padding-right: 44px;
+}
+
+/*
+.dashboard-body {
+  overflow: hidden;
+}
+*/
+
+.bell-style {
+  background-color: #fff;
+  border-radius: 100%;
+  padding: 8px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bell-notif {
+  background-color: $light-red;
+  color: $red;
+  position: absolute;
+  top: 13px;
+  right: 311px;
+  border-radius: 50%;
+  font-weight: 700;
+  width: 16px;
+  height: 16px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  max-width: 260px;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  hr {
+    border: solid 1.5px #99C6D3;
+    width: 244px;
+    margin-bottom: 25px;
+  }
+  ul {
+    list-style-type: none;
+    padding-bottom: 290px;
+    li {
+      font-size: 20px;
+      line-height: 24px;
+      gap: 15px;
+      color: #99C6D3;
+      font-weight: 400;
+      padding: 0 15px;
+      cursor: pointer;
+      input {
+        appearance: none;
+        border: 1px solid $light-primary-color;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        display: grid;
+        place-content: center;
+        &::before {
+          content: "";
+          width: 9px;
+          height: 10px;
+          border-radius: 50%;
+          transform: scale(0);
+          transition: 120ms transform ease-in-out;
+          box-shadow: inset 10px 10px $side-bar-yellow-color;
+        }
+        &:checked::before{
+          transform: scale(1);
+        }
+      }
+      .lycee {
+        font-size: 18px;
+      }
+    }
+    .btn-style {
+      padding: 8px 15px 8px 15px;
+      border-radius: 10px;
+    }
+  }
+}
+
+.responsive-nav {
+  display: none;
+}
+
+.title-part {
+  p{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: $description-color;
+  }
+}
+
+@mixin icons-container {
+  border-radius: 20px;
+  padding: 10.5px 10px 10.5px 10px;
+  img {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 16.5px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-wrap: nowrap;
+  }
+  .icon-title-container {
+    gap: 8px;
+  }
+}
+
+.classes-container {
+  @include icons-container;
+  background-color: $light-red;
+}
+
+.etudiant-container {
+  @include icons-container;
+  background-color: $light-primary-color;
+}
+
+.examens-container {
+  @include icons-container;
+  background-color: $lighter-green-color;
+}
+
+.archive-container {
+  @include icons-container;
+  background-color: $light-yellow;
+}
+
+.dashboard-input-style {
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+  padding: 5.5px 10px 5.5px 10px;
+  .normal-cursor {
+    @include input;
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 100px;
+  }
+  img {
+    cursor: pointer;
+    padding-right: 10px;
+  }
+}
+
+@mixin stat-container-border-style {
+  border-radius: 20px;
+  border: 1px solid #D0D5DD;
+}
+
+.stat-text-container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  p {
+    text-wrap: nowrap;
+  }
+}
+
+.stat-container {
+  @include stat-container-border-style;
+  padding: 25px 20px 20px 80px;
+  hr {
+    border: none;
+    border-radius: 127px;
+    width: 5.1px;
+    height: 56px;
+  }
+}
+
+.voir-plus-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cards-container {
+  @include stat-container-border-style;
+  padding: 15px 20px;
+}
+
+.card-container {
+  border-radius: 20px;
+  padding: 15px 20px 15px 20px;
+  background-color: $light-primary-color;
+  button {
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 55px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+  }
+}
+
+.title-card-container {
+  p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-wrap: nowrap;
+  }
+  img {
+    cursor: pointer;
+  }
+}
+
+.dashboard-right-container {
+  width: 38%;
+  padding-top: 90px;
+}
+
+@mixin person-name-style {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #102528;
+  text-wrap: nowrap;
+}
+
+.underline {
+  border-top: 2px solid $light-primary-color;
+}
+
+.correction-box-container {
+  .justify-flex-start:nth-child(1) {
+    gap: 101px
+  }
+  .justify-flex-start:nth-child(2) {
+    gap: 32px
+  }
+  .justify-flex-start:nth-child(3) {
+    gap: 101px
+  }
+  .justify-flex-start:nth-child(4) {
+    gap: 88px
+  }
+  @include stat-container-border-style;
+  padding: 17px 35px;
+  .person-name-container {
+    p {
+      @include person-name-style;
+    }
+  }
+  .stage-name {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    border-radius: 16px;
+    padding: 3.5px 25px;
+    text-wrap: nowrap;
+    gap: 5px;
+    text-align: center;
+  }
+  .percentage {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    text-wrap: nowrap;
+    span {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
+
+.bulletins-box-container {
+  @include stat-container-border-style;
+  padding: 10px 15px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  .table-header-style {
+    td {
+      font-weight: 500;
+      font-size: 11px;
+      text-wrap: nowrap;
+      background-color: $light-primary-color;
+    }
+    td:nth-child(1) {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      gap: 36px;
+      padding: 10px 10px 10px 34px;
+    }
+    td:nth-child(4) {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      gap: 5px;
+      padding: 10px 10px 10px 0;
+      width: 100%;
+      justify-content: center;
+      img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+  tr:not(.table-header-style) {
+    td:nth-child(1) {
+      padding-left: 17.5px;
+      padding-right: 65px;
+    }
+    td:nth-child(2) {
+      padding-right: 54px;
+    }
+    td:nth-child(3) {
+      padding-right: 48px;
+      text-align: center;
+    }
+    td:nth-child(4) {
+      text-align: center;
+    }
+    td:not(.text-style){
+      @include person-name-style;
+      width: 100%;
+      padding-bottom: 9px;
+      padding-top: 9px;
+    }
+    .text-style {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 17px;
+      text-wrap: nowrap;
+    }
+  }
+}

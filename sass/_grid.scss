@@ -12,21 +12,23 @@ $grid-gaps: (
   "7": 70px,
   "8": 80px,
 );
-$layout-values: flex-start, flex-end, center, space-between, space-around;
+$layout-values: flex-start, flex-end, center, space-between, space-around, space-evenly;
 $align-values: flex-start, flex-end, center;
 
 // Base layout
-.container {
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
 }
 
-.row {
+.dashboard-left-container {
   display: flex;
-  flex-wrap: row wrap;
+  flex-direction: column;
+}
+
+.width-100 {
+  width: 100%;
 }
 
 // Grid gaps calsses
