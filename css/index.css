@@ -23,6 +23,10 @@
   color: #727272;
 }
 
+.placeholder-color {
+  color: #959595;
+}
+
 .red-color {
   color: #F04438;
 }
@@ -252,6 +256,10 @@ img {
   gap: 50px;
 }
 
+.gap-6 {
+  gap: 60px;
+}
+
 .gap-7 {
   gap: 70px;
 }
@@ -274,6 +282,10 @@ img {
 
 .align-flex-start {
   align-items: flex-start;
+}
+
+.align-flex-end {
+  align-items: flex-end;
 }
 
 .align-center {
@@ -671,6 +683,92 @@ table tr:not(.table-header-style) .text-style {
   text-wrap: nowrap;
 }
 
+.classes-body {
+  overflow: hidden;
+}
+
+.header-section p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.classes-section {
+  padding-right: 90px;
+}
+
+button.display-f {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  font-family: Poppins;
+  border-radius: 8px;
+  padding: 8px 15px 8px 15px;
+  cursor: pointer;
+  border: 1px #1B8392 solid;
+  background-color: transparent;
+}
+
+.ajout-btn {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  font-family: Poppins;
+  border-radius: 8px;
+  padding: 8px 15px 8px 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.classes-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 33px;
+  row-gap: 46px;
+  margin-bottom: 77px;
+}
+.classes-grid .grey-background {
+  border-radius: 12px;
+  background-color: #F3F6F6;
+  padding: 24px 21px;
+}
+.classes-grid .grey-background p:nth-child(1) {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  text-wrap: nowrap;
+}
+.classes-grid .grey-background p:nth-child(1) sup {
+  font-size: 12px !important;
+}
+.classes-grid .grey-background p:nth-child(2) {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 30px;
+}
+.classes-grid .grey-background button {
+  border-radius: 8px;
+  padding: 8px 21px 8px 21px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-footer {
+  width: 100%;
+}
+.nav-footer p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.nav-footer .light-text {
+  color: #B5B5B5;
+}
+
 @media (max-width: 1870px) {
   .stat-container {
     padding: 25px 20px 20px 40px;
@@ -892,6 +990,10 @@ table tr:not(.table-header-style) .text-style {
 
 .ml-3 {
   margin-left: 36px;
+}
+
+.mb-1 {
+  margin-bottom: 12px;
 }
 
 .mb-3 {
