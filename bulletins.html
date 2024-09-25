@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/index.css">
-  <title>Classes</title>
+  <title>Bulletins</title>
 </head>
 <body>
 <body class="classes-body">
@@ -31,8 +31,8 @@
   <main class="display-f gap-6">
     <nav class="nav display-column primary-bg align-center pt-3">
       <ul class="display-column align-flex-start gap-3">
-        <li class="primary-color display-f align-center side-bar-white-bg btn-style">
-          <img src="assets/home-icon.png" alt="">
+        <li class="side-bar-white-color display-f align-center">
+          <img src="assets/white-home-icon.png" alt="">
           <p>Tableau de bord</p>
         </li>
         <li class="side-bar-white-color display-f align-center">
@@ -43,8 +43,8 @@
           <img src="assets/examens-icon.png" alt="">
           <p>Examens</p>
         </li>
-        <li class="side-bar-white-color display-f align-center">
-          <img src="assets/bulletins-icon.png" alt="">
+        <li class="primary-color display-f align-center side-bar-white-bg btn-style classes-nav-btn-width">
+          <img src="assets/bulletins-green-icon.png" alt="">
           <p>Bulletins</p>
         </li>
         <li class="side-bar-white-color display-f align-center">
@@ -73,183 +73,127 @@
       </ul>
     </nav>
     
-    <section class="classes-section display-column gap-5">
+    <section class="bulletins-section display-column gap-2">
       <div class="header-section display-f align-flex-end justify-space-between">
         <div>
-          <h3 class="font-w-xxl font-xxl pt-3 primary-color mb-1">Classes</h3>
-          <p class="description-color"><span class="placeholder-color">Page1</span> > <span class="placeholder-color">Page2</span> > Page sélectionnée</p>
+          <h3 class="font-w-xxl font-xxl pt-3 primary-color mb-1">Bulletins</h3>
+          <p>Bulletins</p>
         </div>
         <div class="display-f align-center gap-1">
+          <button class="display-f align-center gap-1 ajout-btn border-none primary-bg font-w-xl">
+            <img src="assets/download-icon.png" alt="">
+            Télécharger en pdf
+          </button>
           <button class="display-f align-center gap-1 primary-color">
             <img src="assets/search-icon.png" alt="">
-            Recherche
+            Recherche un étudiant
           </button>
-          <button class="ajout-btn border-none primary-bg">
-            Ajouter une classe
-          </button>
+          <div class="display-f align-center dashboard-input-style gap-4">
+            <input class="normal-cursor" type="text" placeholder="Semestre 1" readonly>
+            <img src="assets/down-arrow.png" alt="" class="cursor">
+          </div>
+          <div class="display-f align-center dashboard-input-style gap-4">
+            <input class="normal-cursor" type="text" placeholder="Bac Maths_2" readonly>
+            <img src="assets/down-arrow.png" alt="" class="cursor">
+          </div>
         </div>
       </div>
-      <div class="classes-grid border-none">
-        <div class="grey-background display-column align-center">
-          <div>
-            <div class="display-f align-center gap-5 mb-1">
-              <p class="description-color">Bac Sciences_3</p>
-              <img src="assets/grey-3-dots-icon.png" alt="">
-            </div>
-            <p class="description-color">36 étudiants</p>
-          </div>
-          <button class="primary-bg border-none">Ouvrir</button>
-        </div>
-        <div class="grey-background display-column align-center">
-          <div>
-            <div class="display-f align-center gap-5 mb-1">
-              <p class="description-color">2<sup>ème</sup> Sciences_2</p>
-              <img src="assets/grey-3-dots-icon.png" alt="">
-            </div>
-            <p class="description-color">36 étudiants</p>
-          </div>
-          <button class="primary-bg border-none">Ouvrir</button>
-        </div>
-        <div class="grey-background display-column align-center">
-          <div>
-            <div class="display-f align-center gap-5 mb-1">
-              <p class="description-color">Bac Sciences_3</p>
-              <img src="assets/grey-3-dots-icon.png" alt="">
-            </div>
-            <p class="description-color">36 étudiants</p>
-          </div>
-          <button class="primary-bg border-none">Ouvrir</button>
-        </div>
-        <div class="grey-background display-column align-center">
-          <div>
-            <div class="display-f align-center gap-5 mb-1">
-              <p class="description-color">Bac Sciences_3</p>
-              <img src="assets/grey-3-dots-icon.png" alt="">
-            </div>
-            <p class="description-color">36 étudiants</p>
-          </div>
-          <button class="primary-bg border-none">Ouvrir</button>
-        </div>
-        <div class="grey-background display-column align-center">
-          <div>
-            <div class="display-f align-center gap-5 mb-1">
-              <p class="description-color">Bac Sciences_3</p>
-              <img src="assets/grey-3-dots-icon.png" alt="">
-            </div>
-            <p class="description-color">36 étudiants</p>
-          </div>
-          <button class="primary-bg border-none">Ouvrir</button>
-        </div>
-        <div class="grey-background display-column align-center">
-          <div>
-            <div class="display-f align-center gap-5 mb-1">
-              <p class="description-color">Bac Sciences_3</p>
-              <img src="assets/grey-3-dots-icon.png" alt="">
-            </div>
-            <p class="description-color">36 étudiants</p>
-          </div>
-          <button class="primary-bg border-none">Ouvrir</button>
-        </div>
-        <div class="grey-background display-column align-center">
-          <div>
-            <div class="display-f align-center gap-5 mb-1">
-              <p class="description-color">Bac Sciences_3</p>
-              <img src="assets/grey-3-dots-icon.png" alt="">
-            </div>
-            <p class="description-color">36 étudiants</p>
-          </div>
-          <button class="primary-bg border-none">Ouvrir</button>
-        </div>
-        <div class="grey-background display-column align-center">
-          <div>
-            <div class="display-f align-center gap-5 mb-1">
-              <p class="description-color">Bac Sciences_3</p>
-              <img src="assets/grey-3-dots-icon.png" alt="">
-            </div>
-            <p class="description-color">36 étudiants</p>
-          </div>
-          <button class="primary-bg border-none">Ouvrir</button>
-        </div>
-        <div class="grey-background display-column align-center">
-          <div>
-            <div class="display-f align-center gap-5 mb-1">
-              <p class="description-color">Bac Sciences_3</p>
-              <img src="assets/grey-3-dots-icon.png" alt="">
-            </div>
-            <p class="description-color">36 étudiants</p>
-          </div>
-          <button class="primary-bg border-none">Ouvrir</button>
-        </div>
-        <div class="grey-background display-column align-center">
-          <div>
-            <div class="display-f align-center gap-5 mb-1">
-              <p class="description-color">Bac Sciences_3</p>
-              <img src="assets/grey-3-dots-icon.png" alt="">
-            </div>
-            <p class="description-color">36 étudiants</p>
-          </div>
-          <button class="primary-bg border-none">Ouvrir</button>
-        </div>
-        <div class="grey-background display-column align-center">
-          <div>
-            <div class="display-f align-center gap-5 mb-1">
-              <p class="description-color">Bac Sciences_3</p>
-              <img src="assets/grey-3-dots-icon.png" alt="">
-            </div>
-            <p class="description-color">36 étudiants</p>
-          </div>
-          <button class="primary-bg border-none">Ouvrir</button>
-        </div>
-        <div class="grey-background display-column align-center">
-          <div>
-            <div class="display-f align-center gap-5 mb-1">
-              <p class="description-color">Bac Sciences_3</p>
-              <img src="assets/grey-3-dots-icon.png" alt="">
-            </div>
-            <p class="description-color">36 étudiants</p>
-          </div>
-          <button class="primary-bg border-none">Ouvrir</button>
-        </div>
-        <div class="grey-background display-column align-center">
-          <div>
-            <div class="display-f align-center gap-5 mb-1">
-              <p class="description-color">Bac Sciences_3</p>
-              <img src="assets/grey-3-dots-icon.png" alt="">
-            </div>
-            <p class="description-color">36 étudiants</p>
-          </div>
-          <button class="primary-bg border-none">Ouvrir</button>
-        </div>
-        <div class="grey-background display-column align-center">
-          <div>
-            <div class="display-f align-center gap-5 mb-1">
-              <p class="description-color">Bac Sciences_3</p>
-              <img src="assets/grey-3-dots-icon.png" alt="">
-            </div>
-            <p class="description-color">36 étudiants</p>
-          </div>
-          <button class="primary-bg border-none">Ouvrir</button>
-        </div>
-        <div class="grey-background display-column align-center">
-          <div>
-            <div class="display-f align-center gap-5 mb-1">
-              <p class="description-color">Bac Sciences_3</p>
-              <img src="assets/grey-3-dots-icon.png" alt="">
-            </div>
-            <p class="description-color">36 étudiants</p>
-          </div>
-          <button class="primary-bg border-none">Ouvrir</button>
-        </div>
+
+      <div>
+        <table class="bulletins-page-table">
+          <tr class="bulletins-table-header-style">
+            <td><div class="display-f align-center"><img src="assets/big-profile-icon.png" alt=""><p>Student name</p></div></td>
+            <td><p>Devoir de contrôle N 1</p><p>Coefficient : 1</p></td>
+            <td><p>Devoir de contrôle N 2</p><p>Coefficient : 0.5</p></td>
+            <td><p>Devoir de contrôle N 1</p><p>Coefficient : 2</p></td>
+            <td><p>Test (optionnel)</p></td>
+            <td><div class="display-f align-center gap-1 justify-center"><img src="assets/moy-icon.png" alt=""><p>Moyenne</p></div></td>
+            <td><p>Rang</p></td>
+          </tr>
+          <tr>
+            <td class="display-f align-center gap-2"><img src="assets/ahmed-img.png" alt=""><p>Ahmed Benamor</p></td>
+            <td><p>15.00</p></td>
+            <td><p>16.00</p></td>
+            <td><p>16.00</p></td>
+            <td><p>19.00</p></td>
+            <td><p class="greater-than-15">17.00/20</p></td>
+            <td><p>1</p></td>
+          </tr>
+          <tr>
+            <td class="display-f align-center gap-2"><img src="assets/mohammed-bl-img.png" alt=""><p>Mohamed Amine Kacem</p></td>
+            <td><p class="red-color">09.00</p></td>
+            <td><p>17.00</p></td>
+            <td><p>14.00</p></td>
+            <td><p>11.00</p></td>
+            <td><p class="greater-than-15">16.00/20</p></td>
+            <td><p>2</p></td>
+          </tr>
+          <tr>
+            <td class="display-f align-center gap-2"><img src="assets/lina-bl-img.png" alt=""><p>Lina Ladhari</p></td>
+            <td><p>12.50</p></td>
+            <td><p>17.00</p></td>
+            <td><p>10.00</p></td>
+            <td><p>10.00</p></td>
+            <td><p class="greater-than-15">15.50/20</p></td>
+            <td><p>3</p></td>
+          </tr>
+          <tr>
+            <td class="display-f align-center gap-2"><img src="assets/rami-img.png" alt=""><p>Rami jammel</p></td>
+            <td><p>12.50</p></td>
+            <td><p class="table-text">Absent</p></td>
+            <td><p>10.00</p></td>
+            <td><p>10.00</p></td>
+            <td><p class="between-10-and-15">13.50/20</p></td>
+            <td><p>4</p></td>
+          </tr>
+          <tr>
+            <td class="display-f align-center gap-2"><img src="assets/sabri-img.png" alt=""><p>Sabri laarif</p></td>
+            <td><p class="red-color">09.00</p></td>
+            <td><p>17.00</p></td>
+            <td><p>14.00</p></td>
+            <td><p>11.00</p></td>
+            <td><p class="between-10-and-15">12.50/20</p></td>
+            <td><p>5</p></td>
+          </tr>
+          <tr>
+            <td class="display-f align-center gap-2"><img src="assets/rahma-img.png" alt=""><p>Rahma kortas</p></td>
+            <td><p>12.50</p></td>
+            <td><p>17.00</p></td>
+            <td><p class="table-text">Non classé</p></td>
+            <td><p>10.00</p></td>
+            <td><p class="between-10-and-15">11.50/20</p></td>
+            <td><p>6</p></td>
+          </tr>
+          <tr>
+            <td class="display-f align-center gap-2"><img src="assets/mohamed-2-img.png" alt=""><p>Mohamed Amine Kacem</p></td>
+            <td><p class="red-color">09.00</p></td>
+            <td><p>17.00</p></td>
+            <td><p>14.00</p></td>
+            <td><p>11.00</p></td>
+            <td><p class="between-10-and-15">10.50/20</p></td>
+            <td><p>7</p></td>
+          </tr>
+          <tr>
+            <td class="display-f align-center gap-2"><img src="assets/feres-img.png" alt=""><p>Fares boubaker</p></td>
+            <td><p class="table-text">Absent</p></td>
+            <td><p>10.00</p></td>
+            <td><p class="red-color">06.00</p></td>
+            <td><p class="red-color">09.00</p></td>
+            <td><p class="less-than-10">09.00/20</p></td>
+            <td><p>8</p></td>
+          </tr>
+          <tr>
+            <td class="display-f align-center gap-2"><img src="assets/Maher-2-img.png" alt=""><p>Maher bouzgarou</p></td>
+            <td><p>11.75</p></td>
+            <td><p>10.00</p></td>
+            <td><p class="red-color">07.50</p></td>
+            <td><p class="red-color">09.00</p></td>
+            <td><p class="less-than-10">08.75/20</p></td>
+            <td><p>9</p></td>
+          </tr>
+        </table>
       </div>
-      <div class="display-f align-center gap-3 justify-flex-end nav-footer">
-        <p class="display-f align-center description-color">Rangs par page: 10<img src="assets/grey-down-arrow.png" alt="" class="cursor"></p>
-        <p class="light-text">1-24 of 100</p>
-        <div class="display-f align-center gap-1">
-          <img src="assets/double-left-arrow.png" alt="" class="cursor">
-          <img src="assets/left-arrow.png" alt="" class="cursor">
-          <img src="assets/right-arrow.png" alt="" class="cursor">
-          <img src="assets/double-right-arrow.png" alt="" class="cursor">
-        </div>
+
     </section>
   </main>
 

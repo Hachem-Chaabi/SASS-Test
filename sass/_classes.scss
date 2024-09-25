@@ -8,9 +8,11 @@
     line-height: 20px;
   }
 }
+
 .classes-section {
   padding-right: 90px;
 }
+
 @mixin btn-style {
   font-size: 14px;
   font-weight: 600;
@@ -20,15 +22,18 @@
   padding: 8px 15px 8px 15px;
   cursor: pointer;
 }
-button.display-f {
+
+button.primary-color {
   @include btn-style;
   border: 1px $primary-color solid;
   background-color: transparent;
 }
+
 .ajout-btn {
   @include btn-style;
   color: #fff;
 }
+
 .classes-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -65,9 +70,11 @@ button.display-f {
     }
   }
 }
+
 .classes-nav-btn-width {
   width: 87%;
 }
+
 .nav-footer {
   width: 100%;
   p {
