@@ -1,0 +1,235 @@
+@media (max-width: 1870px) {
+  .stat-container {
+    padding: 25px 20px 20px 40px;
+  }
+  .classes-container p, .etudiant-container p, .examens-container p, .archive-container p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1815px) {
+  .stat-container {
+    padding: 25px 20px 20px 30px;
+  }
+  .correction-box-container {
+    .stage-name-and-percentage-container {
+      gap: 25px;
+    }
+  }
+}
+
+@media (max-width: 1790px) {
+  .stat-container {
+    padding: 25px 10px 20px 20px;
+  }
+}
+
+@media (max-width: 1770px) {
+  .stat-container {
+    padding: 25px 20px 20px 10px;
+    gap: 35px;
+  }
+  .classes-container p, .etudiant-container p, .examens-container p, .archive-container p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1740px) {
+  .correction-box-container {
+    .stage-name-and-percentage-container {
+      gap: 15px;
+    }
+  }
+}
+
+@media (max-width: 1720px) {
+  .nav {
+    display: none !important;
+  }
+  .responsive-nav {
+    display: block;
+    padding: 0 8px;
+    max-width: max-content;
+  }
+  .logo-img {
+    display: none;
+  }
+  .menu-img {
+    width: 22px;
+    height: 22px;
+  }
+  .stat-container {
+    padding: 25px 20px 20px 80px;
+  }
+}
+
+@media (max-width: 1650px) {
+  .stat-container {
+    padding: 25px 20px 20px 40px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .stat-container {
+    padding: 25px 20px 20px 10px;
+  }
+}
+
+@media (max-width: 1550px) {
+  main {
+    gap: 0 !important;
+    height: 150%;
+  }
+
+  section {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    gap: 0 !important;
+  }
+
+  .nav {
+    display: flex !important;
+  }
+
+  .responsive-nav {
+    display: none;
+  }
+
+  .logo-img {
+    display: block;
+  }
+
+  .dashboard-right-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: min-content;
+    div {
+      margin: 0;
+    }
+  }
+
+  .dashboard-left-container {
+    h3 {
+      padding-top: 30px;
+    }
+  }
+
+  .classes-container p, .etudiant-container p, .examens-container p, .archive-container p {
+    font-size: 18px;
+  }
+
+  .stat-container {
+    padding: 25px 20px 20px 80px;
+  }
+}
+
+@media (max-width: 1430px) {
+  main {
+    height: 184%;
+  }
+
+  .dashboard-right-container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .correction-box-container {
+    width: 860px;
+    div {
+      justify-content: space-between;
+    }
+    .stage-name-and-percentage-container {
+      gap: 220px;
+    }
+    .stage-name {
+      font-size: 18px;
+    }
+    .person-name-container p {
+      font-size: 18px;
+    }
+    .percentage {
+      font-size: 22px;
+    }
+  }
+
+  .bulletins-box-container {
+    width: 900px;
+  }
+
+  .dashboard-right-container {
+    padding-top: 0;
+    .display-column {
+      margin-top: 72px;
+    }
+  }
+
+  table {
+    .table-header-style td {
+      font-size: 17px;
+    }
+    tr:not(.table-header-style) {
+      td:not(.text-style) {
+        font-size: 18px;
+      }
+      .text-style {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .nav {
+    display: none !important;
+  }
+
+  .responsive-nav {
+    display: block;
+  }
+}
+
+@media (max-width: 1050px) {
+  main {
+    height: 223%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-text-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards-container {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 35px;
+    div:nth-child(3) {
+      grid-column: 1 / 3;
+    }
+    div {
+      justify-self: center
+    }
+  }
+
+  .correction-box-container {
+    width: 702px;
+    .stage-name-and-percentage-container {
+      gap: 90px;
+    }
+  }
+
+  .dashboard-left-container, .bulletins-box-container {
+    width: 742px;
+  }
+
+  .mb-4 {
+    margin-bottom: 60px !important;
+  }
+}
