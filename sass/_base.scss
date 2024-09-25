@@ -142,11 +142,10 @@ img {
     border-radius: 10px;
     border: 1.5px solid #D9D9D9;
     padding: 10px 15px 10px 15px;
+    .cursor {
+      cursor: pointer;
+    }
   }
-}
-
-.cursor {
-  cursor: pointer;
 }
 
 .input-container {
