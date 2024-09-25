@@ -1,6 +1,8 @@
 .classes-body {
   overflow: hidden;
+  height: 100%;
 }
+
 .header-section {
   p {
     font-weight: 400;
@@ -8,8 +10,15 @@
     line-height: 20px;
   }
 }
+
+.classes-responsive-nav {
+display: none;
+}
+
 .classes-section {
   padding-right: 90px;
+  width: 100%;
+  
 }
 @mixin btn-style {
   font-size: 14px;

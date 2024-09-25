@@ -76,12 +76,12 @@
 }
 
 @media (max-width: 1550px) {
-  main {
+  .dashboard-main {
     gap: 0 !important;
     height: 150%;
   }
 
-  section {
+  .dashboard-section {
     flex-direction: column;
     align-items: center;
     padding: 0;
@@ -129,7 +129,7 @@
 }
 
 @media (max-width: 1430px) {
-  main {
+  .dashboard-main {
     height: 184%;
   }
 
@@ -194,7 +194,7 @@
 }
 
 @media (max-width: 1050px) {
-  main {
+  .dashboard-main {
     height: 223%;
   }
 
