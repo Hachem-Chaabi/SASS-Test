@@ -737,7 +737,9 @@ button.display-f {
   font-size: 20px;
   line-height: 25px;
   text-wrap: nowrap;
-  margin-bottom: 15px;
+}
+.classes-grid .grey-background p:nth-child(1) sup {
+  font-size: 12px !important;
 }
 .classes-grid .grey-background p:nth-child(2) {
   font-weight: 400;
@@ -759,6 +761,9 @@ button.display-f {
   width: 87%;
 }
 
+.nav-footer {
+  width: 100%;
+}
 .nav-footer p {
   font-size: 14px;
   font-weight: 500;
@@ -992,7 +997,7 @@ button.display-f {
 }
 
 .mb-1 {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 .mb-3 {

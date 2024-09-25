@@ -49,7 +49,9 @@ button.display-f {
       font-size: 20px;
       line-height: 25px;
       text-wrap: nowrap;
-      margin-bottom: 15px;
+      sup {
+        font-size: 12px !important;
+      }
     }
     p:nth-child(2) {
       font-weight: 400;
@@ -74,6 +76,7 @@ button.display-f {
 }
 
 .nav-footer {
+  width: 100%;
   p {
     font-size: 14px;
     font-weight: 500;
