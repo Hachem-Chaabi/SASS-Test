@@ -44,6 +44,7 @@ button.display-f {
   column-gap: 33px;
   row-gap: 46px;
   margin-bottom: 77px;
+  justify-items: center;
   .grey-background {
     border-radius: 12px;
     background-color: $side-bar-white-color;
@@ -74,9 +75,11 @@ button.display-f {
     }
   }
 }
+
 .classes-nav-btn-width {
   width: 87%;
 }
+
 .nav-footer {
   width: 100%;
   p {
