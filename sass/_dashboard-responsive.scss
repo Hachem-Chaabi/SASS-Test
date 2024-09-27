@@ -191,6 +191,10 @@
   .responsive-nav {
     display: block;
   }
+
+  .logo-img {
+    display: none;
+  }
 }
 
 @media (max-width: 1050px) {
@@ -231,5 +235,124 @@
 
   .mb-4 {
     margin-bottom: 60px !important;
+  }
+}
+
+@media (max-width: 1050px) {
+  .responsive-nav {
+    display: none;
+  }
+
+  .dashboard-main {
+    height: 228%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .correction-box-container {
+    .stage-name-and-percentage-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  .grid {
+    width: max-content;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .dashboard-main {
+    height: 282%;
+  }
+
+  .dashboard-left-container {
+    width: 100%;
+    align-items: center;
+    div.align-flex-start {
+      width: 75%;
+      div.gap-2 {
+        width: 100%;
+      }
+    }
+  }
+
+  .stat-container {
+    padding: 25px 20px 20px 40px;
+  }
+  
+  .stat-header-container {
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    div.gap-1 {
+      align-self: flex-start;
+    }
+    div.gap-2 {
+      align-self: flex-end;
+    }
+  }
+
+  .correction-box-container {
+    width: max-content;
+  }
+
+  .bulletins-box-container {
+    display: none;
+  }
+
+  .responsive-bulletins-box-container {
+    display: grid;
+  }
+}
+
+@media (max-width: 650px) {
+  .dashboard-main {
+    height: 282%;
+  }
+
+  .dashboard-left-container {
+    width: 100%;
+    align-items: center;
+    div.align-flex-start {
+      width: 75%;
+      div.gap-2 {
+        width: 100%;
+      }
+    }
+  }
+
+  .stat-container {
+    padding: 25px 20px 20px 40px;
+  }
+  
+  .stat-header-container {
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    div.gap-1 {
+      align-self: flex-start;
+    }
+    div.gap-2 {
+      align-self: flex-end;
+    }
+  }
+
+  .correction-box-container {
+    width: max-content;
+  }
+
+  .bulletins-box-container {
+    display: none;
+  }
+
+  .responsive-bulletins-box-container {
+    display: grid;
   }
 }
