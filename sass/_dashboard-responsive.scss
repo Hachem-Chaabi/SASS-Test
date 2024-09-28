@@ -276,7 +276,7 @@
     width: 100%;
     align-items: center;
     div.align-flex-start {
-      width: 75%;
+      width: 85%;
       div.gap-2 {
         width: 100%;
       }
@@ -301,6 +301,10 @@
 
   .correction-box-container {
     width: max-content;
+  }
+
+  .classes-container-box {
+    width: 85%;
   }
 
   .bulletins-box-container {
@@ -314,45 +318,122 @@
 
 @media (max-width: 650px) {
   .dashboard-main {
-    height: 282%;
+    height: 357%;
   }
 
-  .dashboard-left-container {
-    width: 100%;
-    align-items: center;
-    div.align-flex-start {
-      width: 75%;
-      div.gap-2 {
-        width: 100%;
-      }
-    }
+  .grid {
+    grid-template-columns: 1fr;
   }
 
   .stat-container {
-    padding: 25px 20px 20px 40px;
-  }
-  
-  .stat-header-container {
     flex-direction: column;
-    gap: 8px;
-    justify-content: center;
-    div.gap-1 {
-      align-self: flex-start;
+    padding: 20px;
+  }
+
+  .dashboard-left-container {
+    .stat-container-box {
+      width: 85%;
     }
-    div.gap-2 {
-      align-self: flex-end;
+  }
+
+  .stat-text-container {
+    column-gap: 100px;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-container {
+    div:nth-child(3) {
+      grid-column: 1 / 1;
     }
   }
 
   .correction-box-container {
-    width: max-content;
+    .justify-flex-start {
+      gap: 25px !important;
+      flex-direction: column;
+    }
+    .stage-name-and-percentage-container {
+      flex-direction: row;
+      gap: 30px;
+    }
   }
 
-  .bulletins-box-container {
-    display: none;
+  .dashboard-right-container {
+    width: 85%;
+    .correction-box-container {
+      width: 85%;
+    }
   }
+}
 
+@media (max-width: 460px) {
   .responsive-bulletins-box-container {
-    display: grid;
+    justify-content: center;
+  }
+  .dashboard-right-container {
+    div {
+      div.width-100:nth-child(1) {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+      }
+      .justify-flex-end {
+        justify-content: center;
+      }
+    }
+  }
+
+  .stat-text-container {
+    column-gap: 30px;
+  }
+
+  .dashboard-left-container {
+    .align-flex-start {
+      .align-center {
+        align-self: center;
+      }
+    }
+    .stat-container-box {
+      .stat-header-container {
+        align-self: center;
+        div:nth-child(1) {
+          align-self: center;
+        }
+      }
+    }
+    .classes-container-box {
+      .justify-space-between:nth-child(1) {
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .dashboard-main {
+    height: 405%;
+  }
+
+  .stat-text-container {
+    column-gap: 0;
+    grid-template-columns: 1fr;
+    row-gap: 35px;
+  }
+
+  .correction-box-container {
+    .stage-name-and-percentage-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .person-name-container {
+      p {
+        text-wrap: wrap;
+      }
+    }
   }
 }
