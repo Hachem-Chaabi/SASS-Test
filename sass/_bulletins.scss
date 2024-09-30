@@ -1,0 +1,215 @@
+.bulletins-body {
+  overflow: scroll;
+}
+
+.header-section {
+  h3 {
+    padding-top: 25px;
+  }
+  p {
+    color: #999999;
+  }
+}
+
+.bulletins-section {
+  padding-right: 62px;
+}
+
+.bulletins-responsive-nav {
+  display: none;
+}
+
+.bulletins-page-table {
+  width: 100%;
+  border-collapse: collapse;
+  .bulletins-table-header-style {
+    td {
+      font-size: 14px;
+      text-align: center;
+    }
+    td:nth-child(1) {
+      padding-left: 34px;
+      width: 280px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      background-color: $light-primary-color;
+      img {
+        padding-right: 36px;
+      }
+      p {
+        font-weight: 600;
+        color: $primary-color;
+        line-height: 25px;
+      }
+    }
+    td:nth-child(2), td:nth-child(3), td:nth-child(4) {
+      width: 240px;
+      background-color: $light-primary-color;
+      p {
+        color: $primary-color;
+      }
+      p:nth-child(1) {
+        font-weight: 600;
+      }
+      p:nth-child(2) {
+        font-weight: 400;
+      }
+    }
+    td:nth-child(5), td:nth-child(6), td:nth-child(7) {
+      width: 178px;
+    }
+    td:nth-child(5){
+      color: $primary-color;
+      background-color: #D8ECF3;
+      p {
+        font-weight: 500;
+      }
+    }
+    td:nth-child(6){
+      color: #fff;
+      background-color: $primary-color;
+      p {
+        font-weight: 500;
+      }
+    }
+    td:nth-child(7) {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background-color: $light-primary-color;
+      p {
+        color: $primary-color;
+        font-weight: 500;
+      }
+    }
+  }
+  tr:not(.bulletins-table-header-style) {
+    border-bottom: 2px solid $light-primary-color;
+    td {
+      text-align: center;
+      font-size: 16px;
+      color: #102528;
+      font-weight: 500;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-wrap: nowrap;
+    }
+    td:nth-child(1) {
+      padding-left: 18px;
+      font-size: 12px;
+    }
+    td:last-child {
+      color: $primary-color;
+    }
+
+  }
+}
+
+.table-text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #B5B5B5;
+}
+
+@mixin moy-background-style {
+  border-radius: 18px;
+  padding: 6px 18px;
+  width: 63px;
+}
+
+.less-than-10 {
+  @include moy-background-style;
+  background-color: $light-red;
+  color: $red !important;
+}
+
+.between-10-and-15 {
+  @include moy-background-style;
+  background-color: $light-yellow;
+  color: $yellow !important;
+}
+
+.greater-than-15 {
+  @include moy-background-style;
+  background-color: $lighter-green-color;
+  color: $light-green-color !important;
+}
+
+.responsive-bulletins-section {
+  display: none;
+  width: 100%;
+  padding-right: 32px;
+  .voir-plus-link {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 20px;
+  }
+  .responsive-header-section {
+    margin-bottom: 40px;
+    padding-top: 25px;
+  }
+  .bulletins-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-items: center;
+    .bulletins-card:last-child {
+      display: none;
+    }
+    .bulletins-card {
+      width: 80%;
+      background-color: $side-bar-white-color;
+      border-radius: 16px;
+      padding: 24px;
+      .header-card-container {
+        text-wrap: nowrap;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #D8ECF3;
+        width: 100%;
+        .name-container {
+          padding-right: 40px;
+          p {
+            font-weight: 600;
+            font-size: 16px;
+            color: $description-color;
+          }
+        }
+        .rang-container {
+          p {
+            font-weight: 600;
+            font-size: 18px;
+            color: #00B8D9;
+            background-color: #DBF6FF;
+            padding: 6px 12px;
+            border-radius: 18px;
+          }
+        }
+      }
+      .body-card-container {
+        width: 100%;
+        p:not(p:last-child) {
+          border-bottom: 2px solid #D8ECF3;
+        }
+        p {
+          padding-top: 7px;
+          padding-bottom: 7px;
+          font-weight: 600;
+          font-size: 18px;
+          color: $description-color;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          span {
+            font-weight: 400;
+            color: $description-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}

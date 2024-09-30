@@ -11,12 +11,6 @@ header {
   padding-right: 44px;
 }
 
-/*
-.dashboard-body {
-  overflow: hidden;
-}
-*/
-
 .bell-style {
   background-color: #fff;
   border-radius: 100%;
@@ -297,7 +291,7 @@ nav {
   padding: 10px 15px;
 }
 
-table {
+.bulletins-box-container-table {
   border-collapse: collapse;
   width: 100%;
   .table-header-style {
