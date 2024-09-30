@@ -1,7 +1,4 @@
 @media (max-width: 1800px) {
-  .classes-main {
-    height: 100%;
-  }
   .classes-nav {
     display: none;
   }
@@ -38,9 +35,6 @@
 }
 
 @media (max-width: 1335px) {
-  .classes-main {
-    height: 118%;
-  }
   .classes-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -62,7 +56,6 @@
 
 @media (max-width: 1000px) {
   .classes-main {
-    height: 178%;
     gap: 30px;
   }
   .classes-grid {
@@ -91,9 +84,6 @@
 }
 
 @media (max-width: 650px) {
-  .classes-main {
-    height: 183%;
-  }
 
   .classes-responsive-nav {
     display: none;
@@ -122,9 +112,6 @@
 }
 
 @media (max-width: 600px) {
-  .classes-main {
-    height: 286%;
-  }
   
   .classes-section {
     .classes-grid {
@@ -152,9 +139,6 @@
 }
 
 @media (max-width: 410px) {
-  .classes-main {
-    height: 290%;
-  }
   .nav-footer {
     flex-direction: column;
     gap: 8px;

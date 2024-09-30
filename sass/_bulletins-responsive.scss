@@ -1,7 +1,4 @@
 @media (max-width: 1550px) {
-  .bulletins-main {
-    height: 111%;
-  }
   .bulletins-nav {
     display: none;
   }
@@ -29,9 +26,6 @@
 }
 
 @media (max-width: 1270px) {
-  .bulletins-main {
-    height: 152%;
-  }
   .bulletins-body {
     overflow: scroll;
   }
@@ -64,9 +58,6 @@
 }
 
 @media (max-width: 970px) {
-  .bulletins-main {
-    height: 286%;
-  }
   .responsive-header-section {
     align-items: center;
     div:first-child {
@@ -100,9 +91,6 @@
       row-gap: 15px;
     }
   }
-  .bulletins-main {
-    height: 298%;
-  }  
 }
 
 @media (max-width: 540px) {

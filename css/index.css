@@ -90,9 +90,17 @@ body {
   height: 100%;
 }
 
+main {
+  height: fit-content;
+}
+
 ul {
   padding: 0;
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
@@ -180,7 +188,11 @@ img {
 .btn-container {
   text-align: center;
 }
-.btn-container button {
+.btn-container a {
+  width: 100%;
+}
+.btn-container a button {
+  width: 100%;
   border-radius: 10px;
   padding: 10px 15px 10px 15px;
   font-size: 16px;
@@ -296,10 +308,6 @@ header {
   padding: 15px 60px 15px 25px;
 }
 
-.dashboard-main {
-  height: 100%;
-}
-
 .dashboard-section {
   width: 100%;
   padding-right: 44px;
@@ -336,7 +344,6 @@ nav {
   margin: 0;
   padding: 0;
   max-width: 260px;
-  height: 100%;
   overflow: hidden;
   width: 100%;
 }
@@ -350,12 +357,20 @@ nav ul {
   padding-bottom: 290px;
 }
 nav ul li {
+  padding: 0 15px;
   font-size: 20px;
   line-height: 24px;
   gap: 15px;
   color: #99C6D3;
   font-weight: 400;
-  padding: 0 15px;
+  cursor: pointer;
+}
+nav ul li a {
+  font-size: 20px;
+  line-height: 24px;
+  gap: 15px;
+  color: #99C6D3;
+  font-weight: 400;
   cursor: pointer;
 }
 nav ul li input {
@@ -1122,7 +1137,6 @@ button.primary-color {
 @media (max-width: 1550px) {
   .dashboard-main {
     gap: 0 !important;
-    height: 150%;
   }
   .dashboard-section {
     flex-direction: column;
@@ -1162,9 +1176,6 @@ button.primary-color {
   }
 }
 @media (max-width: 1430px) {
-  .dashboard-main {
-    height: 184%;
-  }
   .dashboard-right-container {
     flex-direction: column;
     gap: 0;
@@ -1218,9 +1229,6 @@ button.primary-color {
   }
 }
 @media (max-width: 1050px) {
-  .dashboard-main {
-    height: 223%;
-  }
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1255,9 +1263,6 @@ button.primary-color {
   .responsive-nav {
     display: none;
   }
-  .dashboard-main {
-    height: 228%;
-  }
 }
 @media (max-width: 1050px) {
   .correction-box-container .stage-name-and-percentage-container {
@@ -1274,9 +1279,6 @@ button.primary-color {
   }
 }
 @media (max-width: 800px) {
-  .dashboard-main {
-    height: 282%;
-  }
   .dashboard-left-container {
     width: 100%;
     align-items: center;
@@ -1315,9 +1317,6 @@ button.primary-color {
   }
 }
 @media (max-width: 650px) {
-  .dashboard-main {
-    height: 357%;
-  }
   .grid {
     grid-template-columns: 1fr;
   }
@@ -1383,9 +1382,6 @@ button.primary-color {
   }
 }
 @media (max-width: 360px) {
-  .dashboard-main {
-    height: 405%;
-  }
   .stat-text-container {
     column-gap: 0;
     grid-template-columns: 1fr;
@@ -1400,9 +1396,6 @@ button.primary-color {
   }
 }
 @media (max-width: 1800px) {
-  .classes-main {
-    height: 100%;
-  }
   .classes-nav {
     display: none;
   }
@@ -1435,9 +1428,6 @@ button.primary-color {
   }
 }
 @media (max-width: 1335px) {
-  .classes-main {
-    height: 118%;
-  }
   .classes-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1455,7 +1445,6 @@ button.primary-color {
 }
 @media (max-width: 1000px) {
   .classes-main {
-    height: 178%;
     gap: 30px;
   }
   .classes-grid {
@@ -1481,9 +1470,6 @@ button.primary-color {
   }
 }
 @media (max-width: 650px) {
-  .classes-main {
-    height: 183%;
-  }
   .classes-responsive-nav {
     display: none;
   }
@@ -1509,9 +1495,6 @@ button.primary-color {
   }
 }
 @media (max-width: 600px) {
-  .classes-main {
-    height: 286%;
-  }
   .classes-section .classes-grid {
     grid-template-columns: 1fr;
     row-gap: 20px;
@@ -1533,9 +1516,6 @@ button.primary-color {
   }
 }
 @media (max-width: 410px) {
-  .classes-main {
-    height: 290%;
-  }
   .nav-footer {
     flex-direction: column;
     gap: 8px;
@@ -1557,9 +1537,6 @@ button.primary-color {
   }
 }
 @media (max-width: 1550px) {
-  .bulletins-main {
-    height: 111%;
-  }
   .bulletins-nav {
     display: none;
   }
@@ -1585,9 +1562,6 @@ button.primary-color {
   }
 }
 @media (max-width: 1270px) {
-  .bulletins-main {
-    height: 152%;
-  }
   .bulletins-body {
     overflow: scroll;
   }
@@ -1614,9 +1588,6 @@ button.primary-color {
   }
 }
 @media (max-width: 970px) {
-  .bulletins-main {
-    height: 286%;
-  }
   .responsive-header-section {
     align-items: center;
   }
@@ -1645,9 +1616,6 @@ button.primary-color {
   .responsive-header-section .btns-container {
     grid-template-columns: 1fr;
     row-gap: 15px;
-  }
-  .bulletins-main {
-    height: 298%;
   }
 }
 @media (max-width: 540px) {

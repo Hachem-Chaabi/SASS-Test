@@ -2,10 +2,6 @@ header {
   padding: 15px 60px 15px 25px;
 }
 
-.dashboard-main {
-  height: 100%;
-}
-
 .dashboard-section {
   width: 100%;
   padding-right: 44px;
@@ -38,11 +34,19 @@ header {
   justify-content: center;
 }
 
+@mixin nav-link-style {
+  font-size: 20px;
+  line-height: 24px;
+  gap: 15px;
+  color: #99C6D3;
+  font-weight: 400;
+  cursor: pointer;
+}
+
 nav {
   margin: 0;
   padding: 0;
   max-width: 260px;
-  height: 100%;
   overflow: hidden;
   width: 100%;
   hr {
@@ -54,13 +58,11 @@ nav {
     list-style-type: none;
     padding-bottom: 290px;
     li {
-      font-size: 20px;
-      line-height: 24px;
-      gap: 15px;
-      color: #99C6D3;
-      font-weight: 400;
       padding: 0 15px;
-      cursor: pointer;
+      @include nav-link-style;
+      a {
+        @include nav-link-style;
+      }
       input {
         appearance: none;
         border: 1px solid $light-primary-color;

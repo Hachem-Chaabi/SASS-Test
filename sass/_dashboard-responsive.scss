@@ -78,7 +78,6 @@
 @media (max-width: 1550px) {
   .dashboard-main {
     gap: 0 !important;
-    height: 150%;
   }
 
   .dashboard-section {
@@ -129,9 +128,6 @@
 }
 
 @media (max-width: 1430px) {
-  .dashboard-main {
-    height: 184%;
-  }
 
   .dashboard-right-container {
     flex-direction: column;
@@ -198,10 +194,6 @@
 }
 
 @media (max-width: 1050px) {
-  .dashboard-main {
-    height: 223%;
-  }
-
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -242,10 +234,6 @@
   .responsive-nav {
     display: none;
   }
-
-  .dashboard-main {
-    height: 228%;
-  }
 }
 
 @media (max-width: 1050px) {
@@ -268,9 +256,6 @@
 }
 
 @media (max-width: 800px) {
-  .dashboard-main {
-    height: 282%;
-  }
 
   .dashboard-left-container {
     width: 100%;
@@ -317,9 +302,6 @@
 }
 
 @media (max-width: 650px) {
-  .dashboard-main {
-    height: 357%;
-  }
 
   .grid {
     grid-template-columns: 1fr;
@@ -415,9 +397,6 @@
 }
 
 @media (max-width: 360px) {
-  .dashboard-main {
-    height: 405%;
-  }
 
   .stat-text-container {
     column-gap: 0;
