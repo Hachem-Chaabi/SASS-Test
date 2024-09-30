@@ -1,6 +1,9 @@
 @media (max-width: 1550px) {
+  .bulletins-body {
+    overflow: scroll;
+  }
   .bulletins-main {
-    height: 100%;
+    height: 111%;
   }
   .bulletins-nav {
     display: none;
