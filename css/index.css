@@ -149,19 +149,21 @@ img {
   cursor: pointer;
 }
 
+.normal-cursor {
+  cursor: context-menu;
+}
+
 .inputs-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 30px;
   column-gap: 45px;
-  cursor: context-menu;
 }
 .inputs-container p {
   font-size: 16px;
   font-weight: 500;
 }
 .inputs-container input {
-  cursor: context-menu;
   border: none;
   outline: none;
   color: #727272;
@@ -499,7 +501,6 @@ nav ul .btn-style {
   padding: 5.5px 10px 5.5px 10px;
 }
 .dashboard-input-style .normal-cursor {
-  cursor: context-menu;
   border: none;
   outline: none;
   color: #727272;
