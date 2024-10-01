@@ -153,6 +153,10 @@ img {
   cursor: context-menu;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
 .inputs-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -176,9 +180,6 @@ img {
   border-radius: 10px;
   border: 1.5px solid #D9D9D9;
   padding: 10px 15px 10px 15px;
-}
-.inputs-container .input-style .cursor {
-  cursor: pointer;
 }
 
 .input-container {
@@ -819,6 +820,9 @@ button.primary-color {
   border-radius: 12px;
   background-color: #F3F6F6;
   padding: 24px 21px;
+}
+.classes-grid .grey-background img {
+  cursor: pointer;
 }
 .classes-grid .grey-background p:nth-child(1) {
   font-weight: 600;

@@ -54,6 +54,9 @@ button.primary-color {
     border-radius: 12px;
     background-color: $side-bar-white-color;
     padding: 24px 21px;
+    img {
+      cursor: pointer;
+    }
     p:nth-child(1) {
       font-weight: 600;
       font-size: 20px;
